@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crearmex</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	
+<nav class="navbar fixed-top px-4 py-3">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="images/Logo Crearmex_Mesa de trabajo 1.jpg" alt="Logo" width="40" height="40" class="me-2">
+      <span class="fw-bold"> CrearMex </span>
+    </a>  
+    <a href="#" class="btn-store">Cotizar Ahora</a>
+  </div>
+	<a href="#contacto" class="btn btn-outline-primary ms-2">Contacto</a>
+	<a href="Preguntas.html" class="btn btn-outline-secondary ms-2">Preguntas Frecuentes</a>
+</nav>
+
+
+
+  <section class="hero">
+    <div class="hero-title">Tradición que se transforma en arte</div>
+<video class="hero-video rounded-video" autoplay muted loop playsinline>
+  <source src="images/crearmex_video.mp4" type="video/mp4">
+</video>
+
+  </section>
+	<section class="grupo-nosotros py-5">
+  <div class="container" style="max-width: 1200px;">
+
+    <div class="row g-4 mb-4">
+      <div class="col-md-4">
+        <div class="contenedor-nosotros p-4 text-center">
+          <h4 class="titulo-nosotros">Envíos</h4>
+          <p class="texto-nosotros mb-0">Nacionales e internacionales</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="contenedor-nosotros p-4 text-center">
+          <h4 class="titulo-nosotros">Diseño</h4>
+          <p class="texto-nosotros mb-0">Artesanal y Digital</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="contenedor-nosotros p-4 text-center">
+          <h4 class="titulo-nosotros">Materiales</h4>
+          <p class="texto-nosotros mb-0">Resistentes y variados</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contenedor-nosotros p-5 text-center">
+      <h2 class="titulo-nosotros mb-4">Crearmex, más que una empresa, una tradición</h2>
+      <p class="texto-nosotros">
+        Nos dedicamos a la elaboración de papel picado artesanal, combinando tradición, creatividad y calidad.
+        Cada pieza refleja la esencia de nuestras raíces mexicanas, elaborada con precisión, cariño y pasión por el detalle.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="papel-picado-section py-5 text-center">
+  <div class="container" style="max-width: 1200px;">
+    <div class="imagen-papel position-relative mx-auto text-white">
+      <img id="imagenPapel" src="images/boda.jpg" alt="Papel picado de boda" class="img-fluid rounded shadow">
+
+      <div class="contenido-superpuesto position-absolute top-50 start-50 translate-middle text-center px-3">
+        <h2 class="mb-4 text-shadow">Sube el nivel de tus eventos</h2>
+
+        <div class="btn-group" role="group" aria-label="Seleccionar tipo de evento">
+          <button type="button" class="btn btn-outline-light active" onclick="mostrarImagen('boda', this)">    Eventos Especiales  </button>
+          <button type="button" class="btn btn-outline-light" onclick="mostrarImagen('muertos', this)">Día de Muertos</button>
+          <button type="button" class="btn btn-outline-light" onclick="mostrarImagen('septiembre', this)">16 de Septiembre</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+	
+	<section class="testimonios py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="mb-5">Clientes satisfechos</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6 mb-4">
+        <blockquote class="blockquote">
+          <p class="mb-3">“Mi evento lució todavía más con sus decorados, en tiempo y forma, Gracias!”</p>
+          <footer class="blockquote-footer">Gerardo Torres</footer>
+        </blockquote>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <blockquote class="blockquote">
+          <p class="mb-3">“Me ayudaron a aterrizar la idea que tenía para el diseño y me entregaron adornos más allá de mis expectativas, definitivamente volvería a comprar.”</p>
+          <footer class="blockquote-footer">Ana Luisa Gallardo</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+	<section class="calltoaction py-5 bg-light text-center">
+	  <div class="contenedor-nosotros p-5 text-center">
+      <h2 class="titulo-nosotros mb-4">Haz tu evento inolvidable con papel picado hecho especialmente para ti</h2>
+		  <div class="boton-centro">
+  <a href="cotizar.html" class="boton-negro">Cotiza tu papel picado</a>
+</div>
+
+    </div>
+	</section>
+<section id="contacto" class="contacto-section py-5 bg-light">
+  <div class="container" style="max-width: 800px;">
+    <h2 class="text-center mb-4">Contáctanos</h2>
+    <form>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre completo">
+      </div>
+      <div class="mb-3">
+        <label for="telefono" class="form-label">Número de Teléfono</label>
+        <input type="tel" class="form-control" id="telefono" placeholder="Ej. 55 1234 5678">
+      </div>
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?"></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary px-5">Enviar</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+    function mostrarImagen(tipo, botonSeleccionado) {
+      const imagen = document.getElementById('imagenPapel');
+      const botones = document.querySelectorAll('.btn-group .btn');
+
+      if (tipo === 'boda') {
+        imagen.src = 'images/boda.jpg';
+        imagen.alt = 'Papel picado para boda';
+      } else if (tipo === 'muertos') {
+        imagen.src = 'images/muertos.jpg';
+        imagen.alt = 'Papel picado para Día de Muertos';
+      } else if (tipo === 'septiembre') {
+        imagen.src = 'images/septiembre.jpg';
+        imagen.alt = 'Papel picado para 16 de Septiembre';
+      }
+
+      botones.forEach(btn => btn.classList.remove('active'));
+      botonSeleccionado.classList.add('active');
+    }
+  </script>
+</body>
+	<footer class="footer align-items-md-center">
+		<div class="container"> 
+			<h2> Crearmex</h2>
+			<h3>All rights reserved</h3>
+		</div>
+	
+	
+	
+	</footer>
+	
+</html>
